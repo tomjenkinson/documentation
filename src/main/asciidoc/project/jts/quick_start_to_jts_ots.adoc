@@ -23,7 +23,7 @@ The key Java packages (and corresponding jar files) for writing basic OTS applic
 All of these packages appear in the lib directory of the {productName} installation, and should be added to the programmer's CLASSPATH.
 
 In order to fully utilize all of the facilities available within {productName}, it will be necessary to add the some additional jar files to your classpath.
-See `bin/setup-env.sh` or `bin\setup-env.bat` for details.
+See https://github.com/jbosstm/narayana/tree/7.2.2.Final/ArjunaCore/scripts/<VARIANT>-setup-env.sh or https://github.com/jbosstm/narayana/tree/7.2.2.Final/ArjunaCore/scripts/<VARIANT>-setup-env.bat for details.
 
 == Setting properties
 
@@ -147,7 +147,7 @@ Once the program has indicated that the transaction information is no longer req
 By default, {productName} does not use a separate transaction manager when creating transactions through the Current interface.
 Each transactional client essentially has its own transaction manager (`TransactionFactory`) which is co-located with it.
 By setting the `com.arjuna.ats.jts.transactionManager` property variable to YES this can be overridden at runtime.
-The transaction factory is located in the bin directory of the {productName} distribution, and should be started by executing the `start-transaction-service` script located in `<ats_root>/bin`.
+The transaction factory can be started with https://github.com/jbosstm/narayana/tree/7.2.2.Final/ArjunaCore/scripts/start-transaction-service.[PLATFORM_ENDING].
 
 Typically Current locates the factory using the `CosServices.cfg` file.
 This file is similar to `resolve_initial_references`, and is automatically updated (or created) when the transaction factory is started on a particular machine.
@@ -168,4 +168,4 @@ If `OrbPortabilityEnvironmentBean.resolveService` is specified when the transact
 == Recovery manager
 
 You will need to start the recovery manager subsystem to ensure that transactions are recovered despite failures.
-In order to do this, you should run the `start-recovery-manager` script in `<ats_root>/bin`.
+In order to do this, you should run the https://github.com/jbosstm/narayana/tree/7.2.2.Final/ArjunaCore/scripts/start-recovery-manager.[PLATFORM_ENDING] script.

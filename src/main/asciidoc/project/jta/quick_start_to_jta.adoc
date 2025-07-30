@@ -17,7 +17,7 @@ The key Java packages (and corresponding jar files) for writing basic JTA applic
 All of these packages appear in the lib directory of the {parentProduct} installation, and should be added to the programmer’s `CLASSPATH`.
 
 In order to fully utilize all of the facilities available within {parentProduct}, it will be necessary to add some additional jar files to your classpath.
-See bin/setup-env.sh or bin\setup-env.bat for details.
+See https://github.com/jbosstm/narayana/tree/7.2.2.Final/ArjunaCore/scripts/<VARIANT>-setup-env.sh or https://github.com/jbosstm/narayana/tree/7.2.2.Final/ArjunaCore/scripts/<VARIANT>-setup-env.bat for details.
 
 == Setting properties
 
